@@ -1,0 +1,129 @@
+
+/* = = = = = = = = = = = = = = = = = datei animation.css = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+/* diese datei regelt die css-animationen  */
+
+
+/* ############################################################ */
+/* | Animation mit TRANSITION | */
+/* BOX-SLIDER */
+/* ############################################################ */
+
+.bild {
+position:relative;
+overflow:hidden;
+}
+
+.bild span {font-size:18px;
+color:#EFEFEF;
+text-shadow:none;
+white-space: pre-wrap;
+}
+
+.boxslider  {display:table;
+position:absolute;
+width:100%;
+height:100%;
+color:#fff;
+text-shadow:0px 0px 1px black;
+padding:1rem;
+margin:0;
+background-color: rgba(0,0,0,0.5);
+transition: all 0.5s ease-out;
+}
+
+
+/* |||||| (browser-hack) NUR BROWSER CHROME und SAFARI |||||| */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.boxslider {display:inline-block;} }
+/* |||||| |||||| */
+
+
+
+.boxslider span  {display:table-cell;
+vertical-align:middle;
+text-align:center;
+border:solid 1px #1B2225;
+padding:1rem;
+background-color: rgba(123,153,153,0.5);
+}
+
+
+/* - - - absolute positionierung - - - */
+
+.boxslider.pos-top-left {
+top:0;left:0;
+}
+
+.boxslider.pos-bottom-right {
+bottom:0;right:0;
+}
+
+
+/* - - - boxslider hidden - - - */
+
+.boxslider.leftslider {
+margin-left:-100rem;
+}
+
+.boxslider.topslider {
+margin-top:-100rem;
+}
+
+.boxslider.rightslider {
+margin-right:-100rem;
+}
+
+.boxslider.bottomslider {
+margin-bottom:-100rem;
+}
+
+
+
+/* - - - boxslider hover - - -*/
+.bild:hover .boxslider {
+margin:0;
+}
+
+
+
+
+/* ############################################################ */
+/* | Animation mit Transition | */
+/* die animation HINEINGLEITEN beim menü (bei mobilen auflösungen)  wird in der datei datei MENUE.CSS angelegt und dort per css-transition ausgelöst  */
+/* die animation DREHEN bei den font-icons beim 'weiter-button'  wird in der datei datei FORMAT.CSS angelegt und dort per css-transition ausgelöst  */
+/* ############################################################ */
+
+
+
+
+
+/* ############################################################ */
+/* Kurzer Überblick: ANIMATIONEN mit CSS */
+
+/* Es gibt 2 Arten von CSS Animationen, nämlich
+
+(1) CSS TRANSITION
+
+(2) CSS ANIMATION (auch KEYFRAMES-ANIMATION genannt).
+
+Bei einer einfachen Animation wie z.b Drehung um 360grad bei Mouseover (hover) ausgelöst,
+kann man von aussen nicht erkennen, ob diese mit (1) oder (2) gemacht ist.
+
+(1)=
+- Erlaubt nur 2 Zustände, Anfangs- und Endzustand
+- Braucht zur Auslösung einen sog. Trigger (z.b.hover oder focus), in der Regel also eine Mausberührung oder Touch.
+- Kein Loop (zb. spiele 8x ab) ist NICHT erlaubt.
+- Nach Beendigung einer Mausberührung-Aktion mit hover läuft die Transition-Animation dann bei Nicht-Mehr-Mausberührung AUCH animiert wieder zurück.
+
+(2)=
+- Erlaubt die 2 Zustände (bzw. die  sind Pflicht) wie bei 1), dann jedoch viele mögliche Zustände dazwischen, eben Keyframes, wie beim Film.
+- Startet im Gegensatz zu 1) auch automatisch (z.b. Foto-Slideshow) beim Laden der Seite.
+- Loop-Angabe ist ERLAUBT.
+
+GEMEINSAM (1. und 2.) HABEN BEIDE :
+- Zeitangabe für kompletten Durchlauf
+- Zeitverzögernung (delay), also starte erst nach X sec
+- Geschwindigkeitssteuerung , verschiedene, wie : // starte schnell, ende langsam  (ease-out) // starte langsam ende schnell (ease-in) // spiele gleichmässig ab (linear)   o.ä. */
+
+/* ############################################################ */

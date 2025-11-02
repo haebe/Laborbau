@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'bungeeregular';
+    src: url('../fonts/bungee/bungee-regular.eot');
+    src: url('../fonts/bungee/bungee-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bungee/bungee-regular.woff2') format('woff2'),
+         url('../fonts/bungee/bungee-regular.woff') format('woff'),
+         url('../fonts/bungee/bungee-regular.ttf') format('truetype'),
+         url('../fonts/bungee/bungee-regular.svg#bungeeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,1078 @@
+
+
+/* = = = = = = = = = = = = = = = = = datei format.css = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+
+/* ############################################################ */
+/* allgemein */
+/* ############################################################ */
+
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+html, body {
+font-family:'open_sanslight',georgia, tahoma, arial, Verdana, Segoe, 'Open Sans',helvetica,roboto ,sans-serif;
+font-size:62.5%;
+line-height:1.5;
+font-weight:normal;
+height:100%;
+}
+
+body {
+font-size:1.7rem;
+margin: 0 auto;
+}
+
+/* andere zeilenabst�nde, absatz */
+.content br {
+line-height:.5;
+}
+
+p.break  {
+line-height:7rem;margin:0;
+}
+
+
+/* �berschriften */
+
+h1, h2, h3, h4, h5 {
+color:#000;
+text-align:left;
+letter-spacing:0px;
+font-weight:normal;
+text-transform:none;
+}
+
+h1 {
+font-size:3.5rem;
+line-height: 3.7rem;
+margin-top: 0rem;
+margin-bottom: 5.4rem;
+}
+
+h2 {text-align:left;
+font-size:2.4rem;
+line-height: 3rem;
+margin-top: 0rem;
+margin-bottom: 5rem;
+}
+
+h2:after {text-align:left;
+border-top: 6px solid #4684B7;
+display: block;
+width: 60px;
+content: "";
+margin: 8px 0 ;
+}
+
+h3 {
+font-size:2rem;
+line-height: 2.8rem;
+margin-top: 2.1rem;
+margin-bottom:1.4rem;
+letter-spacing:0rem;
+}
+
+/* allgemeine links  */
+
+a {background-color:transparent;
+color:#000 ;
+text-decoration: underline;
+}
+
+a:hover  {color:#000;
+text-decoration:none;
+}
+
+p.break  {
+line-height:15rem;margin:0;
+}
+
+
+/* quelltext-erkl�rungen - wenn vorhanden */
+pre {white-space:pre-wrap;position:relative;
+font-size:1.5rem;
+padding:1rem 0.5rem 1rem 0.5rem;
+margin:2rem auto;
+text-align:center;
+background:#c96f58;
+color:#fff;
+font-family:'open_sanslight',georgia, tahoma, arial, Verdana, Segoe, 'Open Sans',helvetica,roboto ,sans-serif;
+}
+
+pre .extra {display:inline-block;position:absolute;left:0rem;top:1rem;font-size:2rem;
+color:#fff;font-weight:bold;
+transform:rotate(-45deg);
+}
+
+
+
+/* ############################################################ */
+/*  speziell*/
+/* ############################################################ */
+
+.container_haupt {height:100%;
+margin:0 auto;
+padding:0;
+width:100%;background:#fff;
+}
+
+/* bilder  anpassen der gr�sse  */
+/*
+wenn sie eigene einzelne bilder einbauen, unabh�ngig von unserem bilderstystem,
+dann werden diese bilder maximal (max-width) so gross wie die original-abmessungen des bildes
+bwz. des umschliessenden containers wenn vorhanden
+*/
+
+img {max-width: 100%;
+height: auto;
+margin:0 auto;
+}
+
+
+#main-spalte-1 {display:block;vertical-align:top;
+width:27rem;
+margin:0px;
+padding:0rem 0rem;
+background:#B0BEC5;color:#000;
+}
+
+#main-spalte-2 {display:table-cell;
+margin: 0px;
+}
+
+
+/*   WEITER-BUTTON */
+
+.btn  {
+cursor:pointer;
+}
+
+.btn span.weiter  {display:inline-block;
+color:#fff;
+background:#859aa4;
+text-decoration:none;
+padding:.2rem 1.8rem .2rem 1.2rem;
+border-radius:2rem;
+}
+
+.btn span.weiter:hover {color:#fff;background:#dca394;
+text-decoration:none;
+}
+
+.btn .weiter:before {display:inline-block;
+font-family:'Font Awesome 5 Free';
+content:"\f35a";
+font-style: normal;
+font-variant-caps: normal;
+font-variant-ligatures: normal;
+font-weight: 900;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+text-decoration: none;
+color:#fff;
+padding:.2rem 0;
+margin:0 .6rem 0em .4rem;
+transition:transform .3s ease-out;
+}
+
+.btn .weiter:hover:before {
+transform:  rotate(360deg);
+color:#fff;
+}
+
+
+/*  spruch/zitat */
+
+#zitat {margin:0 6vw;
+}
+
+#zitat   span {
+font-style:italic;
+}
+
+#zitat  span:before {display:inline-block;
+font-family:'Font Awesome 5 Free';
+content:"\f10d";
+font-style: normal;
+font-variant-caps: normal;
+font-variant-ligatures: normal;
+font-weight: 900;
+text-rendering: auto;
+color:#607D8B;
+font-size:3rem;
+line-height:0;
+margin-right:1rem;
+}
+
+
+
+/* = = = = = = = = = =  = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = */
+/*  GRID-SYSTEM #1  - mit DISPLAY:INLINE-BLOCK */
+/* = = = = = = = = = =  = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = */
+
+.wrapper-box {display:block;
+text-align:center;
+padding:0rem;
+}
+
+.box {display:inline-block;
+width:100%;
+vertical-align:top;
+padding:.2rem;
+margin:0 -.2rem 0 -.2rem ;/* ausgleich ( minus-margin) f�r INLINE-BLOCK-WHITESPACE-BUG*/
+}
+
+.box-1_of_1 ,
+.box-1_of_2 ,
+.box-1_of_3 ,
+.box-1_of_4 ,
+.box-1_of_5 ,
+.box-1_of_6
+{width:100%;
+}
+
+.wrapper-box .box img,
+.wrapper-box .box a img {display:block;
+width: 100%;
+height: auto;
+}
+
+
+/* ############################################################ */
+/* bereich logo */
+/* ############################################################ */
+
+
+
+.logo {
+	display: table;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-image: url(../images/Tiber_Titelbild.jpg);
+	/*background-position:10% 10%; */
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo-content {display:table-cell;
+width:100%;height:auto;
+padding:0rem;
+margin:0 ;/* ausgleich ( minus-margin) f�r INLINE-BLOCK-WHITESPACE-BUG */
+}
+
+
+/* name */
+#name-wrapper {
+display:table;
+border-spacing:0rem 0rem;
+width:100%;height:100%;
+padding:0;
+margin:0 auto;
+}
+
+#name  {
+font-family:'bungeeregular';
+width:100%;
+display:table-cell;
+vertical-align:middle;
+text-align:center;
+color: #222;
+font-size:2.2rem;
+line-height:2.4rem;
+padding:1rem 1rem 1rem 1rem;
+/*text-transform:uppercase;*/
+margin:0;
+/*text-shadow:0px 0px 2px black;*/
+}
+
+#name b {
+font-weight:normal;
+letter-spacing:2px;
+font-size:1.4rem;
+}
+
+
+/* ############################################################ */
+/* bereich logo UNTERSEITEN*/
+/* -----unterseiten - index1,index2, index3 ----- */
+/* ############################################################ */
+
+
+.logo-unterseite {
+display:table;
+width:100%;
+background:#78909C;
+margin:0;
+padding:0;
+text-align:center;
+}
+
+.logo-content-unterseite {display:table-cell;
+width:100%;height:15rem;text-align:center;
+padding:0rem;
+margin:0 ;
+}
+
+/* linie  */
+hr.line {background: #000;
+border: none;
+color: #D8ECFE;
+height: 1px;
+width: 100%;
+margin-top:3rem;
+margin-bottom:3rem
+}
+
+
+
+/* ############################################################ */
+/* bereich content */
+/* ############################################################ */
+
+.section-content {display:table;
+width:100%;
+margin:0;
+padding:0;
+color:#000 ;
+}
+
+.content {
+display:table-cell;
+width:100%;
+height:50vh;
+margin: 0 auto;
+padding:6rem 2rem;
+text-align:left;
+vertical-align:middle;
+}
+
+
+/*  ----------------------------------------  */
+/*  NTH-CHILD - jeder ungerade (odd) abschnitt, also 1, 3, 5 , 7 usw. */
+/*  ----------------------------------------  */
+
+
+.section-content:nth-child(odd) {
+background:#ECEFF1;
+color:#000;
+}
+
+.section-content:nth-child(odd) h2 ,
+.section-content:nth-child(odd) h3 {
+color:#000;
+}
+
+.section-content:nth-child(odd) h2 span {
+font-weight:bold;
+}
+
+.section-content:nth-child(odd) h2:after  {
+border-top: 4px solid #859aa4;
+}
+
+/*  links */
+
+.section-content:nth-child(odd)  a  {text-decoration:underline;
+white-space:nowrap;
+color:#000;
+}
+
+.section-content:nth-child(odd)  a:hover  {text-decoration: none;
+color:#000;
+}
+
+
+/*  ----------------------------------------  */
+/*  NTH-CHILD - jeder gerade (even) abschnitt , also 2, 4, 6 , 8 usw. */
+/*  ----------------------------------------  */
+
+
+.section-content:nth-child(even) {
+background:#CFD8DC;
+color:#000;
+}
+
+.section-content:nth-child(even) h2 ,
+.section-content:nth-child(even) h3 {
+color:#000;
+}
+
+.section-content:nth-child(even) h2 span {
+font-weight:bold;
+}
+
+.section-content:nth-child(even) h2:after  {
+border-top: 4px solid #607d8b ;
+}
+
+/*  links */
+
+.section-content:nth-child(even)  a  {text-decoration:underline;
+white-space:nowrap;
+color:#000;
+}
+
+.section-content:nth-child(even)  a:hover  {text-decoration: none;
+color:#000;
+}
+
+
+
+/*  ----------------------------------------  */
+/*  box GALLERY                                */
+/*  ----------------------------------------  */
+
+#gallery .box {display:inline-block;
+width:100%;height:100%;
+padding:.3rem;
+box-shadow:none;
+margin:0 -.24rem -.12rem -.24rem ;/* ausgleich ( minus-margin) f�r INLINE-BLOCK-WHITESPACE-BUG*/
+}
+
+#gallery .box-1_of_2,
+#gallery .box-1_of_3  {
+width:100%;
+text-align:center;
+}
+
+#gallery .box img,
+#gallery .box a img {display:block;
+width: 100%;
+height: auto;
+border:none;
+}
+
+
+/*  ----------------------------------------  */
+/*  box ABOUT                                 */
+/*  ----------------------------------------  */
+
+
+/* icons  */
+
+#about .fas  ,
+#about .fab ,
+#about .far  {display:block;
+font-size:6rem;
+color:#C96F58 ;
+text-align:center;
+margin:0 auto;
+}
+
+/* -----GRID-SYSTEM #2  - mit DISPLAY:TABLE  ----- */
+
+#about.wrapper-box-table {
+display:table;
+table-layout:fixed;
+width:100%;
+padding:0;
+}
+
+#about .box-tabcell {min-height:20rem;
+display:inline-block;
+background:#f5f5f5;
+color:#000;
+width: 100%;
+padding:2rem ;
+margin-bottom:2rem;
+vertical-align:top;
+text-align:center;
+}
+
+
+/* tabellenzelle-reihe */
+#about .tabrow {display:table-row; }
+
+#about h3 {margin-top:1rem;margin-bottom:.5rem;
+color:#000;
+text-align:center;
+text-transform:uppercase;
+font-weight:bold;
+}
+
+
+
+/*  ----------------------------------------  */
+/*  box TEAM                                */
+/*  ----------------------------------------  */
+
+/* ----- icons ----- */
+
+#team ul {text-align:center;
+padding:0rem;
+margin:0;
+}
+
+#team  li {list-style:none;
+padding:0rem;
+margin:0;display:inline;
+}
+
+#logo .fas ,
+#logo .fab ,
+#logo .far  {display:inline-block;
+text-align:center;
+
+padding: 0;
+
+color:#fff;
+}
+
+/* icons  */
+
+#team .fas  ,
+#team  .fab ,
+#team  .far  {display:inline-block;
+background:#bcc8ce;
+color:#fff ;
+text-align:center;
+margin:0 auto;margin:1rem  .2rem 1rem .2rem;
+width:3rem;
+height:3rem;
+line-height:3rem;
+font-size:1.8rem;border-radius:100%;
+}
+
+
+/* -----GRID-SYSTEM #2  - mit DISPLAY:TABLE  ----- */
+
+#team.wrapper-box-table {
+display:table;
+table-layout:fixed;
+width:100%;
+padding:0rem;
+}
+
+#team  .box-tabcell {min-height:20rem;
+display:inline-block;
+background:#f5f5f5;
+color:#000;
+width: 100%;
+padding:2rem ;
+margin-bottom:2rem;
+vertical-align:top;
+text-align:center;
+}
+
+/* tabellenzelle-reihe */
+#team .tabrow ,
+#team .tabrow2 {display:table-row; }
+
+#team  h3 {margin-top:.5rem;margin-bottom:.5rem;
+color:#000;
+text-align:center;
+text-transform:uppercase;
+font-weight:bold;
+}
+
+#team img {border-radius:100% }
+
+
+/*  ----------------------------------------  */
+/*  box KONTAKT                               */
+/*  ----------------------------------------  */
+
+
+#kontakt ul {text-align:left;
+padding:0rem;
+margin:0;
+}
+
+#kontakt  li {list-style:none;
+padding:0rem;
+margin:0;
+}
+
+/* -----GRID-SYSTEM #2  - mit DISPLAY:TABLE  ----- */
+
+#kontakt.wrapper-box-table {
+display:table;
+table-layout:fixed;
+font-size:1.4rem;
+width:100%;
+padding:0rem;
+}
+
+#kontakt .box-tabcell {min-height:15rem;
+display:inline-block;
+background:#bcc8ce;
+color:#294c5d;
+width: 100%;
+padding:2rem 1rem ;
+margin-bottom:2rem;
+vertical-align:middle;
+text-align:center;position:relative;
+}
+
+
+/* tabellenzelle-reihe */
+#kontakt .tabrow {display:table-row; }
+
+
+
+/* ----- icons ----- */
+
+#kontakt a  {color:#294c5d;
+text-decoration:none;
+}
+
+#kontakt a:hover  {
+text-decoration:underline;
+}
+
+#kontakt .fas ,
+#kontakt .fab ,
+#kontakt .far  {display:inline-block;text-align:center;
+margin:-.18rem  .8rem .4rem -.18rem;
+padding: 0;
+width:2.5rem;
+height:2.5rem;
+line-height:2.5rem;
+font-size:1.4rem;
+background:#C96F58;
+color:#fff;
+}
+
+.day  {display:inline-block;
+width:7rem;font-weight:normal;
+}
+
+#kontakt .box-tabcell span {position:absolute;
+top:-.7rem;right:0;
+}
+
+#kontakt .box-tabcell span .fas ,
+#kontakt .box-tabcell span .fab ,
+#kontakt .box-tabcell span .far {
+color:#809DA8;
+background:transparent;
+font-size:3rem;
+}
+
+/*  ----------------------------------------  */
+/*  box IMPRESSIONS                               */
+/*  ----------------------------------------  */
+
+
+/* -----GRID-SYSTEM #2  - mit DISPLAY:TABLE  ----- */
+
+#impressions.wrapper-box-table {
+display:table;
+table-layout:fixed;
+width:100%;
+padding:0rem;
+}
+
+#impressions  .box-tabcell {min-height:20rem;
+display:inline-block;
+background:#CFD8DC;
+color:#000;
+width: 100%;
+padding:2rem ;
+vertical-align:top;
+margin-bottom:1rem;
+text-align:center;vertical-align:middle;
+}
+
+/* tabellenzelle-reihe */
+#impressions .tabrow {display:table-row; }
+
+/* text statt bilder in den boxen */
+#impressions .box-tabcell .text {display:block;
+padding:0 1rem;vertical-align:middle;
+}
+
+#impressions h3 {margin-top:0rem;margin-bottom:0rem;
+text-align:center;
+text-transform:uppercase;
+font-weight:bold;color:#000;
+}
+
+#impressions .fas ,
+#impressions .fab ,
+#impressions .far  {display:inline-block;font-size:2.2rem;
+margin:0 1rem 1rem 1rem;
+color:#37474F;
+background:transparent;
+padding:0;
+width:3rem;
+height:3rem;
+line-height:3rem;
+}
+
+/* text statt bilder in den boxen */
+#impressions  .back-01 {
+background-image:url(../images/logo05.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#impressions  .back-02 {
+background-image:url(../images/logo03.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#impressions  .back-03 {
+background-image:url(../images/logo04.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#impressions  .back-04 {
+background-image:url(../images/logo02.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+/*  ----------------Bilder f�r Reverenzen Laborneubau Markkleeberg & Laborneubau Stuttgart ----------------------  */
+#impressions  .back-10 {
+background-image:url(../images/Reverenzen/Markkleeberg.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#impressions  .back-11 {
+background-image:url(../images/Reverenzen/SUI-Stgt.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+/*  ----------------------------------------  */
+/*  box Reverenzen                               */
+/*  ----------------------------------------  */
+
+
+/* -----GRID-SYSTEM #2  - mit DISPLAY:TABLE  ----- */
+
+#Reverenzen.wrapper-box-table {
+display:table;
+table-layout:fixed;
+width:100%;
+padding:0rem;
+}
+
+#Reverenzen  .box-tabcell {min-height:20rem;
+display:inline-block;
+background:#CFD8DC;
+color:#000;
+width: 100%;
+padding:2rem ;
+vertical-align:top;
+margin-bottom:1rem;
+text-align:center;vertical-align:middle;
+}
+
+/* tabellenzelle-reihe */
+#Reverenzen .tabrow {display:table-row; }
+
+/* text statt bilder in den boxen */
+#Reverenzen .box-tabcell .text {display:block;
+padding:0 1rem;vertical-align:middle;
+}
+
+#Reverenzen h3 {margin-top:0rem;margin-bottom:0rem;
+text-align:center;
+text-transform:uppercase;
+font-weight:bold;color:#000;
+}
+
+#Reverenzen .fas ,
+#Reverenzen .fab ,
+#Reverenzen .far  {display:inline-block;font-size:2.2rem;
+margin:0 1rem 1rem 1rem;
+color:#37474F;
+background:transparent;
+padding:0;
+width:3rem;
+height:3rem;
+line-height:3rem;
+}
+
+/* text statt bilder in den boxen */
+#Reverenzen  .back-01 {
+background-image:url(../images/Reverenzen/logo05.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#Reverenzen  .back-02 {
+background-image:url(../images/Reverenzen/logo03.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#Reverenzen  .back-01 {
+background-image:url(../images/logo05.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#Reverenzen  .back-02 {
+background-image:url(../images/logo03.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#Reverenzen  .back-03 {
+background-image:url(../images/logo04.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#Reverenzen  .back-04 {
+background-image:url(../images/logo02.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+
+/* ############################################################ */
+/* bereich fuss */
+/* ############################################################ */
+
+.section-fuss {
+width:100%;
+background:#263238;
+color:#fff;
+}
+
+.fuss-content {
+text-align:center;
+margin: 0rem auto;
+padding:1rem 0 ;
+}
+
+
+/* -----menu  ----- */
+
+#fuss-menu ul {text-align:center;
+padding:0rem;
+margin:0;
+}
+
+#fuss-menu  li {list-style:none;display:block;
+padding:0rem .2rem;
+margin:0;
+}
+
+#fuss-menu li a {display:inline-block;
+text-decoration : none;
+font-size:1.4rem;
+letter-spacing:0rem;
+padding:0rem ;
+margin: 0;
+color:#fff;
+}
+
+#fuss-menu li a:hover {background:transparent;
+color:#fff;
+text-decoration:underline;
+}
+
+
+/* ############################################################ */
+/* M E D I A   Q U E R I E S - RESPONSIVE-BILDSCHIRMABFRAGEN */
+/* ############################################################ */
+
+/* ==================================== ab 320 pixel ================================== */
+
+
+/* - - - - -  nur info - - - - - */
+/*  f�r die kleinste smartphone-aufl�sung von 320pixel ben�tigen wir KEINE bildschirmabragen (media queries), denn hierf�r gilt ja automtisch der gesamte vorstehende quelltext-code - weil wir das template ja 'mobile-first' angelegt haben */
+
+
+
+/* ==================================== ab 360 pixel ================================== */
+
+@media (min-width: 360px) {
+
+#kontakt .box-tabcell {padding:2rem ; }
+
+}
+
+
+/* ==================================== ab 400 pixel ================================== */
+
+@media (min-width: 400px) {
+
+/* keine angabe */
+
+}
+
+
+/* ==================================== ab 480 pixel ================================== */
+
+@media (min-width: 480px) {
+
+.content {padding:6rem 3rem; }
+
+}
+
+
+/* ==================================== ab 580 pixel ================================== */
+@media (min-width: 580px) {
+
+
+/* - - - - -   GRID-SYSTEM #1   - - - - - */
+.box-1_of_1 {width: 50%; }
+.box-1_of_2 {width: 50%; }
+.box-1_of_3 {width: 33.33%;  }
+.box-1_of_4 {width: 50%; }
+#gallery .box-1_of_2 {width: 50%; }
+#gallery .box-1_of_3 {width: 50%; }
+/* - - - - - ende  GRID-SYSTEM #1 - - - - - */
+
+#name   {font-size:4.2rem; line-height:4.4rem; }
+#name b   {font-size:2.5rem; line-height:2.6rem;  }
+
+/* - - - - - GRID-SYSTEM #2 - - - - - */
+#team.wrapper-box-table {border-spacing:1rem .5rem; font-size:1.4rem; }
+#team h3 {font-size:1.5rem; }
+#team .box-tabcell  {display:table-cell;height:20rem;width: 50%;padding:2rem .5rem }
+#team .tabrow {display:none; }
+/* - - - - - ende  GRID-SYSTEM #2 - - - - - */
+
+}
+
+
+
+
+/* ==================================== ab 760 pixel ================================== */
+@media (min-width: 760px) {
+
+html {font-size:70%;}
+
+.logo-content {height:50vh; }
+
+.content {padding:6rem 4.5rem; }
+
+
+/* - - - - -   GRID-SYSTEM #1  - - - - - */
+.box-1_of_2 {width: 50%;  }
+/* - - - - - ende  GRID-SYSTEM #1  - - - - - */
+
+
+/* - - - - -  GRID-SYSTEM #2 - mit display:table/table-cell - - - - - */
+#about.wrapper-box-table {border-spacing:1rem 0rem; font-size:1.4rem; }
+#about h3 {font-size:1.5rem; }
+#about .box-tabcell  {display:table-cell;height:20rem;width: 33.33%;padding:2rem .5rem }
+#about .tabrow {display:none; }
+
+#kontakt.wrapper-box-table {border-spacing:1rem 0rem; font-size:1.3rem }
+#kontakt .box-tabcell  {display:table-cell;height:20rem;width: 50%; }
+#kontakt .tabrow {display:none; }
+#impressions.wrapper-box-table {border-spacing:1rem .5rem; }
+#impressions h3 {font-size:1.5rem; }
+#impressions .box-tabcell  {display:table-cell;height:20rem;width: 50%;font-size:1.4rem;padding:2rem 1rem }
+#impressions .tabrow {display:none; }
+#impressions .tabrow-2 {display:table-row; }
+/* - - - - - ende  GRID-SYSTEM #2  - - - - - */
+
+#impressions .richtung {transform:rotate(-90deg); }
+
+
+#fuss-menu  li {display:inline; }
+
+}
+
+
+/* ==================================== ab 960 pixel ================================== */
+@media (min-width: 960px) {
+
+.logo-content {height:70vh; }
+
+
+}
+
+
+/* ===================================== ab 1024 pixel ================================= */
+
+@media (min-width: 1024px) {
+
+.content {height:100vh; }
+
+.logo-content {height:42.84vh; }
+
+#main-spalte-1 {display:table-cell;vertical-align:top;
+}
+
+/* - - - - -  GRID-SYSTEM #1   - - - - - */
+.box-1_of_4 {width: 25%;  }
+.box-1_of_5 {width: 20%;  }
+/* - - - - - ende  GRID-SYSTEM #1  - - - - - */
+
+
+}
+
+
+
+/* ===================================== ab 1100 pixel ================================= */
+
+@media (min-width: 1100px) {
+
+html { font-size:75%; }
+
+.content {padding:6rem 7rem; }
+
+pre {width:50vw; }
+
+
+
+
+}
+
+
+/* ===================================== ab 1200 pixel ================================= */
+
+@media (min-width: 1200px) {
+
+/* einr�cken der bilder */
+.content .wrapper-box {padding:0rem 5rem; }
+
+/* KEIN einr�cken der bilder bei der galley auf der startseite */
+.content #gallery.wrapper-box {padding:0rem 0rem; }
+
+/* - - - - -  GRID-SYSTEM #2 - mit display:table/table-cell - - - - - */
+#about .box-tabcell  {padding:2rem 2rem }
+/* - - - - - ende  GRID-SYSTEM #2  - - - - - */
+
+
+}
+
+
+
+/* ===================================== ab 1400 pixel ================================= */
+
+@media (min-width: 1400px) {
+
+html { font-size:80%; }
+
+.content {padding:6rem 9rem; }
+/* - - - - -  GRID-SYSTEM #1   - - - - - */
+#gallery .box-1_of_3 {width: 33.33%; }
+/* - - - - - ende  GRID-SYSTEM #1  - - - - - */
+}
+
+
+
+/* +  +  +  +  + +  +  +  +  +  C O D E ENDE  +  +  +  +  +  +  +  +  +  + */
