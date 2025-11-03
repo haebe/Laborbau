@@ -1,12 +1,6 @@
-/* = = = = = = = = = = = = = = = = = datei boxfenster.css = = = = = = = = = = = = = = = = = = = = = = = = = */
-
-
 /* -------------------------------------- */
-/* diese datei enthält  die BOX-FENSTER mit box-fenster-öffnen/schliessen-funktionen */
+/* Datei enthält die BOX-FENSTER mit box-fenster-öffnen/schliessen-funktionen */
 /* -------------------------------------- */
-
-
-
 
 
 /* ############################################################ */
@@ -20,24 +14,18 @@
 	clip: auto;
 }
 
-
 #boxfenster-home ,
 #boxfenster-primus1 ,
 #boxfenster-primus2 ,
 #boxfenster-primus3 ,
 #boxfenster-bmi ,
 #boxfenster-secundus ,
-
-
-
 #boxfenster-tertius ,
 #boxfenster-quartus,
 #boxfenster-quintus ,
 #boxfenster-sranfahrt ,
-
 #boxfenster-Impressionen_Bau_allgemein,
 #boxfenster-Impressionen_Laborwelt,
-
 #boxfenster-referenzen-1 ,
 #boxfenster-referenzen-2 ,
 #boxfenster-referenzen-3 ,
@@ -57,7 +45,9 @@
 #boxfenster-referenzen-16 ,
 #boxfenster-referenzen-17 ,
 #boxfenster-referenzen-18 ,
-
+#boxfenster-referenzen-19 ,
+#boxfenster-referenzen-20 ,
+#boxfenster-referenzen-21 ,
 #boxfenster-laborbau-1 ,
 #boxfenster-laborbau-2 ,
 #boxfenster-laborbau-3 ,
@@ -68,32 +58,38 @@
 #boxfenster-sextus,
 #boxfenster-impressum ,
 #boxfenster-datenschutz ,
-#boxfenster-disclaimer  {display:block;
-font-size:15px;
-position:fixed;
-top:0;
-left:0;
-overflow:auto;
-box-shadow: 0 0 1px black;
-text-align:left;
-font-size:1.7rem;
-line-height:2.5rem;
-height:100vh;
-width:100vw;
-margin-top:-260vh;
-overflow:hidden;
+#boxfenster-disclaimer  {
+	display:block;
+	font-size:15px;
+	position:fixed;
+	top:0;
+	left:0;
+	overflow:auto;
+	box-shadow: 0 0 1px black;
+	text-align:left;
+	font-size:1.7rem;
+	line-height:2.5rem;
+	height:100vh;
+	width:100vw;
+	margin-top:-260vh;
+	overflow:hidden;
 }
 
-.boxinhalt {display:block;overflow:auto;position:relative;
-background:#ECEFF1;
-color:#000;
-height:100%;
-padding:7rem 2.5rem 2rem 2.5rem ;
-margin:0;
+.boxinhalt {
+	display:block;
+	overflow:auto;
+	position:relative;
+	background:#ECEFF1;
+	color:#000;
+	height:100%;
+	padding:7rem 2.5rem 2rem 2.5rem ;
+	margin:0;
 }
 
-.boxinhalt    h1, .boxinhalt   h2, .boxinhalt   h3  {
-color:#000;
+.boxinhalt h1,
+.boxinhalt h2,
+.boxinhalt h3 {
+	color:#000;
 }
 
 .boxinhalt a {
@@ -102,32 +98,35 @@ color:#000;
 
 /* - - - schließen-schalter für box-fenster -  - - - */
 
-.schalter label.button-close {display:table;
-position: absolute;
-top:1rem;right:0%;
-z-index:3;
-cursor:pointer;
-background:transparent;
-text-align:center;
-width:100%;vertical-align:middle;
+.schalter label.button-close {
+	display:table;
+	position: absolute;
+	top:1rem;right:0%;
+	z-index:3;
+	cursor:pointer;
+	background:transparent;
+	text-align:center;
+	width:100%;vertical-align:middle;
 }
 
 
 /* - - - icons  -  - - - */
 
-.schalter  .fas {display:table-cell;vertical-align:middle;
-color:#dca394;
-margin:0rem;
-padding: 0;
-font-size:4rem;
-width:5rem;
-height:5rem;
-line-height:5rem;
-border-radius:100%;
+.schalter .fas {
+	display:table-cell;
+	vertical-align:middle;
+	color:#dca394;
+	margin:0rem;
+	padding: 0;
+	font-size:4rem;
+	width:5rem;
+	height:5rem;
+	line-height:5rem;
+	border-radius:100%;
 }
 
 .schalter .fas:hover  {
-color:#78909C;
+	color:#78909C;
 }
 
 
@@ -136,7 +135,7 @@ color:#78909C;
 
 /* - checkbox versteckt - */
 input[type=checkbox]{
-display: none;
+	display: none;
 }
 
 
@@ -177,6 +176,11 @@ input#open-info-referenzen-15:checked ~ #boxfenster-referenzen-15,
 input#open-info-referenzen-16:checked ~ #boxfenster-referenzen-16,
 input#open-info-referenzen-17:checked ~ #boxfenster-referenzen-17,
 input#open-info-referenzen-18:checked ~ #boxfenster-referenzen-18,
+input#open-info-referenzen-19:checked ~ #boxfenster-referenzen-19,
+input#open-info-referenzen-20:checked ~ #boxfenster-referenzen-20,
+input#open-info-referenzen-21:checked ~ #boxfenster-referenzen-21,
+
+
 
 input#open-info-objektplanung-1:checked ~ #boxfenster-objektplanung-1,
 input#open-info-objektplanung-2:checked ~ #boxfenster-objektplanung-2,
@@ -189,9 +193,9 @@ input#open-info-sextus:checked ~ #boxfenster-sextus,
 input#open-info-impressum:checked ~ #boxfenster-impressum,
 input#open-info-datenschutz:checked ~ #boxfenster-datenschutz,
 input#open-info-disclaimer:checked ~ #boxfenster-disclaimer {
-z-index:4;
-margin:0;background:rgba(0,0,0,.6);
-ANIMATION:einblenden 1s linear;
+	z-index:4;
+	margin:0;background:rgba(0,0,0,.6);
+	ANIMATION:einblenden 1s linear;
 }
 
 
@@ -203,27 +207,24 @@ ANIMATION:einblenden 1s linear;
 /* ==================================== ab 640 pixel ================================== */
 
 @media (min-width: 640px) {
-
-/* fenster-schliessen-button wird neu positioniert */
-.schalter label.button-close {top:2rem;right:3rem; width:auto; }
-
-.boxinhalt {padding:2rem 2.5rem 2rem 2.5rem ; }
-
-
+	/* fenster-schliessen-button wird neu positioniert */
+	.schalter label.button-close {
+		top:2rem;
+		right:3rem;
+		width:auto;
+	}
+	.boxinhalt {
+		padding:2rem 2.5rem 2rem 2.5rem ;
+	}
 }
 
 
 /* ==================================== ab 960 pixel ================================== */
 @media (min-width: 960px) {
-
-.boxinhalt {
-width:80rem;
-height:84vh;margin:0 auto;
-margin-top:8vh;
-margin-bottom:8vh;
+	.boxinhalt {
+	width:80rem;
+		height:84vh;margin:0 auto;
+		margin-top:8vh;
+		margin-bottom:8vh;
+	}
 }
-
-}
-
-
-/* = = = = = = = = = = = = = = = = = = = = = Code Ende = = = = = = = = = = = = = = = = = = = = = */
