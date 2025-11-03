@@ -736,36 +736,36 @@ background-position:50% 50%;
 background-repeat:no-repeat;
 background-size:cover;
 }
-/*  ----------------Bilder f�r Reverenzen Laborneubau Markkleeberg & Laborneubau Stuttgart ----------------------  */
+/*  ----------------Bilder f�r Referenzen Laborneubau Markkleeberg & Laborneubau Stuttgart ----------------------  */
 #impressions  .back-10 {
-background-image:url(../images/Reverenzen/Markkleeberg.jpg);
+background-image:url(../images/Referenzen/Markkleeberg.jpg);
 background-position:50% 50%;
 background-repeat:no-repeat;
 background-size:cover;
 }
 
 #impressions  .back-11 {
-background-image:url(../images/Reverenzen/SUI-Stgt.jpg);
+background-image:url(../images/Referenzen/SUI-Stgt.jpg);
 background-position:50% 50%;
 background-repeat:no-repeat;
 background-size:cover;
 }
 
 /*  ----------------------------------------  */
-/*  box Reverenzen                               */
+/*  box Referenzen                               */
 /*  ----------------------------------------  */
 
 
 /* -----GRID-SYSTEM #2  - mit DISPLAY:TABLE  ----- */
 
-#Reverenzen.wrapper-box-table {
+#Referenzen.wrapper-box-table {
 display:table;
 table-layout:fixed;
 width:100%;
 padding:0rem;
 }
 
-#Reverenzen  .box-tabcell {min-height:20rem;
+#Referenzen  .box-tabcell {min-height:20rem;
 display:inline-block;
 background:#CFD8DC;
 color:#000;
@@ -777,22 +777,22 @@ text-align:center;vertical-align:middle;
 }
 
 /* tabellenzelle-reihe */
-#Reverenzen .tabrow {display:table-row; }
+#Referenzen .tabrow {display:table-row; }
 
 /* text statt bilder in den boxen */
-#Reverenzen .box-tabcell .text {display:block;
+#Referenzen .box-tabcell .text {display:block;
 padding:0 1rem;vertical-align:middle;
 }
 
-#Reverenzen h3 {margin-top:0rem;margin-bottom:0rem;
+#Referenzen h3 {margin-top:0rem;margin-bottom:0rem;
 text-align:center;
 text-transform:uppercase;
 font-weight:bold;color:#000;
 }
 
-#Reverenzen .fas ,
-#Reverenzen .fab ,
-#Reverenzen .far  {display:inline-block;font-size:2.2rem;
+#Referenzen .fas ,
+#Referenzen .fab ,
+#Referenzen .far  {display:inline-block;font-size:2.2rem;
 margin:0 1rem 1rem 1rem;
 color:#37474F;
 background:transparent;
@@ -803,42 +803,42 @@ line-height:3rem;
 }
 
 /* text statt bilder in den boxen */
-#Reverenzen  .back-01 {
-background-image:url(../images/Reverenzen/logo05.jpg);
+#Referenzen  .back-01 {
+background-image:url(../images/Referenzen/logo05.jpg);
 background-position:50% 50%;
 background-repeat:no-repeat;
 background-size:cover;
 }
 
-#Reverenzen  .back-02 {
-background-image:url(../images/Reverenzen/logo03.jpg);
+#Referenzen  .back-02 {
+background-image:url(../images/Referenzen/logo03.jpg);
 background-position:50% 50%;
 background-repeat:no-repeat;
 background-size:cover;
 }
 
-#Reverenzen  .back-01 {
+#Referenzen  .back-01 {
 background-image:url(../images/logo05.jpg);
 background-position:50% 50%;
 background-repeat:no-repeat;
 background-size:cover;
 }
 
-#Reverenzen  .back-02 {
+#Referenzen  .back-02 {
 background-image:url(../images/logo03.jpg);
 background-position:50% 50%;
 background-repeat:no-repeat;
 background-size:cover;
 }
 
-#Reverenzen  .back-03 {
+#Referenzen  .back-03 {
 background-image:url(../images/logo04.jpg);
 background-position:50% 50%;
 background-repeat:no-repeat;
 background-size:cover;
 }
 
-#Reverenzen  .back-04 {
+#Referenzen  .back-04 {
 background-image:url(../images/logo02.jpg);
 background-position:50% 50%;
 background-repeat:no-repeat;
