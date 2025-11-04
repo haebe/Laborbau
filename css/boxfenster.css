@@ -93,7 +93,12 @@
 }
 
 .boxinhalt a {
-color:#000;
+	color:#000;
+}
+
+.boxinhalt > .jobtitel {
+	margin-top: 0;
+	margin-bottom: 15px;
 }
 
 /* - - - schließen-schalter für box-fenster -  - - - */
@@ -144,23 +149,18 @@ input#open-info-home:checked ~ #boxfenster-home,
 input#open-info-primus1:checked ~ #boxfenster-primus1,
 input#open-info-primus2:checked ~ #boxfenster-primus2,
 input#open-info-primus3:checked ~ #boxfenster-primus3,
-
 input#open-info-bmi:checked ~ #boxfenster-bmi,
-
 input#open-info-secundus:checked ~ #boxfenster-secundus,
 input#open-info-tertius:checked ~ #boxfenster-tertius,
 input#open-info-quartus:checked ~ #boxfenster-quartus,
 input#open-info-quintus:checked ~ #boxfenster-quintus,
 input#open-info-sranfahrt:checked ~ #boxfenster-sranfahrt,
-
 input#open-info-Impressionen_Bau_allgemein:checked ~ #boxfenster-Impressionen_Bau_allgemein,
 input#open-info-Impressionen_Laborwelt:checked ~ #boxfenster-Impressionen_Laborwelt,
-
 input#open-info-referenzen-1:checked ~ #boxfenster-referenzen-1,
 input#open-info-referenzen-2:checked ~ #boxfenster-referenzen-2,
 input#open-info-referenzen-3:checked ~ #boxfenster-referenzen-3,
 input#open-info-referenzen-4:checked ~ #boxfenster-referenzen-4,
-
 input#open-info-referenzen-5:checked ~ #boxfenster-referenzen-5,
 input#open-info-referenzen-6:checked ~ #boxfenster-referenzen-6,
 input#open-info-referenzen-7:checked ~ #boxfenster-referenzen-7,
@@ -179,9 +179,6 @@ input#open-info-referenzen-18:checked ~ #boxfenster-referenzen-18,
 input#open-info-referenzen-19:checked ~ #boxfenster-referenzen-19,
 input#open-info-referenzen-20:checked ~ #boxfenster-referenzen-20,
 input#open-info-referenzen-21:checked ~ #boxfenster-referenzen-21,
-
-
-
 input#open-info-objektplanung-1:checked ~ #boxfenster-objektplanung-1,
 input#open-info-objektplanung-2:checked ~ #boxfenster-objektplanung-2,
 input#open-info-laborbau-1:checked ~ #boxfenster-laborbau-1,
@@ -214,7 +211,7 @@ input#open-info-disclaimer:checked ~ #boxfenster-disclaimer {
 		width:auto;
 	}
 	.boxinhalt {
-		padding:2rem 2.5rem 2rem 2.5rem ;
+		padding:2rem 2.5rem 2rem 2.5rem;
 	}
 }
 
@@ -223,7 +220,8 @@ input#open-info-disclaimer:checked ~ #boxfenster-disclaimer {
 @media (min-width: 960px) {
 	.boxinhalt {
 	width:80rem;
-		height:84vh;margin:0 auto;
+		height:84vh;
+		margin:0 auto;
 		margin-top:8vh;
 		margin-bottom:8vh;
 	}
