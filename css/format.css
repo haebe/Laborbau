@@ -267,7 +267,7 @@ img {
 
 .wrapper-box .box img,
 .wrapper-box .box a img {
-	display:block;
+	display: block;
 	width: 100%;
 	height: auto;
 }

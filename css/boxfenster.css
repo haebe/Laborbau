@@ -101,7 +101,11 @@
 	margin-bottom: 15px;
 }
 
-.bild {
+#boxfenster-referenzen-1 .bild,
+#boxfenster-referenzen-2 .bild,
+#boxfenster-referenzen-19 .bild,
+#boxfenster-referenzen-20 .bild
+ {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
