@@ -90,6 +90,12 @@
 .boxinhalt h2,
 .boxinhalt h3 {
 	color:#000;
+	/*font-weight: bold;*/
+}
+
+.boxinhalt ul{
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
 }
 
 .boxinhalt a {
