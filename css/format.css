@@ -286,10 +286,25 @@ img {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background-image: url(../images/Tiber_Titelbild.jpg);
 	/*background-position:10% 10%; */
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
+}
+
+.logo-image-wrapper {
+	/* 1. Fülle den gesamten .logo-Container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* 2. CSS-Äquivalent von background-size: cover */
+    object-fit: cover; 
+    
+    /* 3. Lege das Bild ganz nach hinten (unter den Text) */
+    z-index: 1;
 }
 
 .logo-content {
@@ -298,6 +313,8 @@ img {
 	height:auto;
 	padding:0rem;
 	margin:0 ;/* ausgleich ( minus-margin) f�r INLINE-BLOCK-WHITESPACE-BUG */
+	position: relative;
+	z-index: 2;
 }
 
 
