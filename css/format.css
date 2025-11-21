@@ -1006,184 +1006,142 @@ hr.line {
 
 
 /* ############################################################ */
-/* M E D I A   Q U E R I E S - RESPONSIVE-BILDSCHIRMABFRAGEN */
+/* M E D I A   Q U E R I E S - RESPONSIVE-Design */
 /* ############################################################ */
 
-/* ==================================== ab 320 pixel ================================== */
-
-
-/* - - - - -  nur info - - - - - */
-/*  f�r die kleinste smartphone-aufl�sung von 320pixel ben�tigen wir KEINE bildschirmabragen (media queries), denn hierf�r gilt ja automtisch der gesamte vorstehende quelltext-code - weil wir das template ja 'mobile-first' angelegt haben */
-
-
+/* 
+The design is mobile-first. Changes accour based on the smalles format and are building up
+until we reach the widest screen in an office
+*/
 
 /* ==================================== ab 360 pixel ================================== */
 
 @media (min-width: 360px) {
-
-#kontakt .box-tabcell {padding:2rem ; }
-
+	#kontakt .box-tabcell {padding:2rem ; }
 }
-
 
 /* ==================================== ab 400 pixel ================================== */
 
 @media (min-width: 400px) {
-
-/* keine angabe */
-
+	/* keine angabe */
 }
-
 
 /* ==================================== ab 480 pixel ================================== */
 
 @media (min-width: 480px) {
-
-.content {padding:6rem 3rem; }
-
+	.content {padding:6rem 3rem; }
 }
-
 
 /* ==================================== ab 580 pixel ================================== */
+
 @media (min-width: 580px) {
+	/* - - - - -   GRID-SYSTEM #1   - - - - - */
+	.box-1_of_1 {width: 50%; }
+	.box-1_of_2 {width: 50%; }
+	.box-1_of_3 {width: 33.33%;  }
+	.box-1_of_4 {width: 50%; }
+	#gallery .box-1_of_2 {width: 50%; }
+	#gallery .box-1_of_3 {width: 50%; }
+	/* - - - - - ende  GRID-SYSTEM #1 - - - - - */
 
+	#name   {font-size:4.2rem; line-height:4.4rem; }
+	#name b   {font-size:2.5rem; line-height:2.6rem;  }
 
-/* - - - - -   GRID-SYSTEM #1   - - - - - */
-.box-1_of_1 {width: 50%; }
-.box-1_of_2 {width: 50%; }
-.box-1_of_3 {width: 33.33%;  }
-.box-1_of_4 {width: 50%; }
-#gallery .box-1_of_2 {width: 50%; }
-#gallery .box-1_of_3 {width: 50%; }
-/* - - - - - ende  GRID-SYSTEM #1 - - - - - */
-
-#name   {font-size:4.2rem; line-height:4.4rem; }
-#name b   {font-size:2.5rem; line-height:2.6rem;  }
-
-/* - - - - - GRID-SYSTEM #2 - - - - - */
-#team.wrapper-box-table {border-spacing:1rem .5rem; font-size:1.4rem; }
-#team h3 {font-size:1.5rem; }
-#team .box-tabcell  {display:table-cell;height:20rem;width: 50%;padding:2rem .5rem }
-#team .tabrow {display:none; }
-/* - - - - - ende  GRID-SYSTEM #2 - - - - - */
-
+	/* - - - - - GRID-SYSTEM #2 - - - - - */
+	#team.wrapper-box-table {border-spacing:1rem .5rem; font-size:1.4rem; }
+	#team h3 {font-size:1.5rem; }
+	#team .box-tabcell  {display:table-cell;height:20rem;width: 50%;padding:2rem .5rem }
+	#team .tabrow {display:none; }
+	/* - - - - - ende  GRID-SYSTEM #2 - - - - - */
 }
-
-
-
 
 /* ==================================== ab 760 pixel ================================== */
+
 @media (min-width: 760px) {
+	html {font-size:70%;}
 
-html {font-size:70%;}
+	.logo-content {height:50vh; }
 
-.logo-content {height:50vh; }
-
-.content {padding:6rem 4.5rem; }
-
-
-/* - - - - -   GRID-SYSTEM #1  - - - - - */
-.box-1_of_2 {width: 50%;  }
-/* - - - - - ende  GRID-SYSTEM #1  - - - - - */
+	.content {padding:6rem 4.5rem; }
 
 
-/* - - - - -  GRID-SYSTEM #2 - mit display:table/table-cell - - - - - */
-#about.wrapper-box-table {border-spacing:1rem 0rem; font-size:1.4rem; }
-#about h3 {font-size:1.5rem; }
-#about .box-tabcell  {display:table-cell;height:20rem;width: 33.33%;padding:2rem .5rem }
-#about .tabrow {display:none; }
-
-#kontakt.wrapper-box-table {border-spacing:1rem 0rem; font-size:1.3rem }
-#kontakt .box-tabcell  {display:table-cell;height:20rem;width: 50%; }
-#kontakt .tabrow {display:none; }
-#impressions.wrapper-box-table {border-spacing:1rem .5rem; }
-#impressions h3 {font-size:1.5rem; }
-#impressions .box-tabcell  {display:table-cell;height:20rem;width: 50%;font-size:1.4rem;padding:2rem 1rem }
-#impressions .tabrow {display:none; }
-#impressions .tabrow-2 {display:table-row; }
-/* - - - - - ende  GRID-SYSTEM #2  - - - - - */
-
-#impressions .richtung {transform:rotate(-90deg); }
+	/* - - - - -   GRID-SYSTEM #1  - - - - - */
+	.box-1_of_2 {width: 50%;  }
+	/* - - - - - ende  GRID-SYSTEM #1  - - - - - */
 
 
-#fuss-menu  li {display:inline; }
+	/* - - - - -  GRID-SYSTEM #2 - mit display:table/table-cell - - - - - */
+	#about.wrapper-box-table {border-spacing:1rem 0rem; font-size:1.4rem; }
+	#about h3 {font-size:1.5rem; }
+	#about .box-tabcell  {display:table-cell;height:20rem;width: 33.33%;padding:2rem .5rem }
+	#about .tabrow {display:none; }
 
+	#kontakt.wrapper-box-table {border-spacing:1rem 0rem; font-size:1.3rem }
+	#kontakt .box-tabcell  {display:table-cell;height:20rem;width: 50%; }
+	#kontakt .tabrow {display:none; }
+	#impressions.wrapper-box-table {border-spacing:1rem .5rem; }
+	#impressions h3 {font-size:1.5rem; }
+	#impressions .box-tabcell  {display:table-cell;height:20rem;width: 50%;font-size:1.4rem;padding:2rem 1rem }
+	#impressions .tabrow {display:none; }
+	#impressions .tabrow-2 {display:table-row; }
+	/* - - - - - ende  GRID-SYSTEM #2  - - - - - */
+
+	#impressions .richtung {transform:rotate(-90deg); }
+
+	#fuss-menu  li {display:inline; }
 }
-
 
 /* ==================================== ab 960 pixel ================================== */
+
 @media (min-width: 960px) {
-
-.logo-content {height:70vh; }
-
-
+	.logo-content {height:70vh; }
 }
-
 
 /* ===================================== ab 1024 pixel ================================= */
 
 @media (min-width: 1024px) {
+	.content {height:100vh; }
 
-.content {height:100vh; }
+	.logo-content {height:42.84vh; }
 
-.logo-content {height:42.84vh; }
+	#main-spalte-1 {display:table-cell;vertical-align:top;
+	}
 
-#main-spalte-1 {display:table-cell;vertical-align:top;
+	/* - - - - -  GRID-SYSTEM #1   - - - - - */
+	.box-1_of_4 {width: 25%;  }
+	.box-1_of_5 {width: 20%;  }
+	/* - - - - - ende  GRID-SYSTEM #1  - - - - - */
 }
-
-/* - - - - -  GRID-SYSTEM #1   - - - - - */
-.box-1_of_4 {width: 25%;  }
-.box-1_of_5 {width: 20%;  }
-/* - - - - - ende  GRID-SYSTEM #1  - - - - - */
-
-
-}
-
-
 
 /* ===================================== ab 1100 pixel ================================= */
 
 @media (min-width: 1100px) {
-
-html { font-size:75%; }
-
-.content {padding:6rem 7rem; }
-
-pre {width:50vw; }
-
-
-
-
+	html { font-size:75%; }
+	.content {padding:6rem 7rem; }
+	pre {width:50vw; }
 }
-
 
 /* ===================================== ab 1200 pixel ================================= */
 
 @media (min-width: 1200px) {
+	/* einr�cken der bilder */
+	.content .wrapper-box {padding:0rem 5rem; }
 
-/* einr�cken der bilder */
-.content .wrapper-box {padding:0rem 5rem; }
+	/* KEIN einr�cken der bilder bei der galley auf der startseite */
+	.content #gallery.wrapper-box {padding:0rem 0rem; }
 
-/* KEIN einr�cken der bilder bei der galley auf der startseite */
-.content #gallery.wrapper-box {padding:0rem 0rem; }
-
-/* - - - - -  GRID-SYSTEM #2 - mit display:table/table-cell - - - - - */
-#about .box-tabcell  {padding:2rem 2rem }
-/* - - - - - ende  GRID-SYSTEM #2  - - - - - */
-
-
+	/* - - - - -  GRID-SYSTEM #2 - mit display:table/table-cell - - - - - */
+	#about .box-tabcell  {padding:2rem 2rem }
+	/* - - - - - ende  GRID-SYSTEM #2  - - - - - */
 }
-
-
 
 /* ===================================== ab 1400 pixel ================================= */
 
 @media (min-width: 1400px) {
+	html { font-size:80%; }
 
-html { font-size:80%; }
-
-.content {padding:6rem 9rem; }
-/* - - - - -  GRID-SYSTEM #1   - - - - - */
-#gallery .box-1_of_3 {width: 33.33%; }
-/* - - - - - ende  GRID-SYSTEM #1  - - - - - */
+	.content {padding:6rem 9rem; }
+	/* - - - - -  GRID-SYSTEM #1   - - - - - */
+	#gallery .box-1_of_3 {width: 33.33%; }
+	/* - - - - - ende  GRID-SYSTEM #1  - - - - - */
 }
