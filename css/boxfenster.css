@@ -48,6 +48,7 @@
 #boxfenster-referenzen-19 ,
 #boxfenster-referenzen-20 ,
 #boxfenster-referenzen-21 ,
+#boxfenster-referenzen-22 ,
 #boxfenster-laborbau-1 ,
 #boxfenster-laborbau-2 ,
 #boxfenster-laborbau-3 ,
@@ -197,6 +198,7 @@ input#open-info-referenzen-18:checked ~ #boxfenster-referenzen-18,
 input#open-info-referenzen-19:checked ~ #boxfenster-referenzen-19,
 input#open-info-referenzen-20:checked ~ #boxfenster-referenzen-20,
 input#open-info-referenzen-21:checked ~ #boxfenster-referenzen-21,
+input#open-info-referenzen-22:checked ~ #boxfenster-referenzen-22,
 input#open-info-objektplanung-1:checked ~ #boxfenster-objektplanung-1,
 input#open-info-objektplanung-2:checked ~ #boxfenster-objektplanung-2,
 input#open-info-laborbau-1:checked ~ #boxfenster-laborbau-1,
@@ -209,7 +211,8 @@ input#open-info-impressum:checked ~ #boxfenster-impressum,
 input#open-info-datenschutz:checked ~ #boxfenster-datenschutz,
 input#open-info-disclaimer:checked ~ #boxfenster-disclaimer {
 	z-index:4;
-	margin:0;background:rgba(0,0,0,.6);
+	margin:0;
+	background:rgba(0,0,0,.6);
 	ANIMATION:einblenden 1s linear;
 }
 
