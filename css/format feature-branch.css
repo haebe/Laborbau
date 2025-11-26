@@ -144,7 +144,8 @@ dann werden diese bilder maximal (max-width) so gross wie die original-abmessung
 bwz. des umschliessenden containers wenn vorhanden
 */
 
-img {
+img,
+figure {
 	max-width: 100%;
 	height: auto;
 	margin:0 auto;
@@ -266,7 +267,8 @@ img {
 }
 
 .wrapper-box .box img,
-.wrapper-box .box a img {
+.wrapper-box .box a img,
+.wrapper-box .box figure {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -282,13 +284,30 @@ img {
 .logo {
 	display: table;
 	width: 100%;
+	/* height: 50vh; */
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	text-align: center;
-	background-image: url(../images/Tiber_Titelbild.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+  .logo-image-wrapper,
+  #tiber_titelbild {
+	/* Fülle den gesamten .logo-Container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* CSS-Äquivalent von background-size: cover */
+    object-fit: cover; 
+	object-position: right center;
+
+    
+    /* Lege das Bild ganz nach hinten, ansonsten 2 oder höher */
+    z-index: 1;
 }
 
 .logo-content {
@@ -297,6 +316,8 @@ img {
 	height: auto;
 	padding: 0rem;
 	margin: 0 ;/* ausgleich ( minus-margin) f�r INLINE-BLOCK-WHITESPACE-BUG */
+	position: relative;
+	z-index: 2;
 }
 
 
@@ -1101,7 +1122,8 @@ until we reach the widest screen in an office
 @media (min-width: 1024px) {
 	.content {height:100vh; }
 
-	.logo-content{
+	.logo-content,
+	.logo figure {
 		height:42.84vh;
 	}
 

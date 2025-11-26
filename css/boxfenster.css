@@ -86,7 +86,6 @@
 	padding:7rem 2.5rem 2rem 2.5rem ;
 	margin:0;
 
-
 	h1,
 	h2,
 	h3,
@@ -94,15 +93,30 @@
 		color: #000;
 	}
 
-	ul {
+	h2 {
+		margin-bottom: 15px;
+	}
+
+	address {
+		font-style: normal;
+		margin-bottom: 2rem;
+		display: block;
+
+		strong {
+			font-weight: normal;
+		}
+	}
+
+	ul,
+	p {
 	margin-top: 0.2rem;
 	margin-bottom: 0.2rem;
 	}
 
-	> .jobtitel {
-	margin-top: 0;
-	margin-bottom: 15px;
+	.margin-bottom {
+		margin-bottom: 1.2rem;
 	}
+
 }
 
 
@@ -120,38 +134,38 @@
 
 /* - - - schließen-schalter für box-fenster -  - - - */
 
-.schalter label.button-close {
-	display:table;
-	position: absolute;
-	top:1rem;right:0%;
-	z-index:3;
-	cursor:pointer;
-	background:transparent;
-	text-align:center;
-	width:100%;vertical-align:middle;
+.schalter{
+	label.button-close {
+		display: table;
+		position: absolute;
+		top: 1rem;
+		right: 0%;
+		z-index: 3;
+		cursor: pointer;
+		background: transparent;
+		text-align: center;
+		width: 100%;
+		vertical-align: middle;
+	}
+
+	/* - - - icons  -  - - - */
+	.fas {
+		display: table-cell;
+		vertical-align: middle;
+		color: #dca394;
+		margin: 0rem;
+		padding: 0;
+		font-size: 4rem;
+		width: 5rem;
+		height: 5rem;
+		line-height: 5rem;
+		border-radius: 100%;
+	}
+
+	.fas:hover  {
+		color:#78909C;
+	}
 }
-
-
-/* - - - icons  -  - - - */
-
-.schalter .fas {
-	display:table-cell;
-	vertical-align:middle;
-	color:#dca394;
-	margin:0rem;
-	padding: 0;
-	font-size:4rem;
-	width:5rem;
-	height:5rem;
-	line-height:5rem;
-	border-radius:100%;
-}
-
-.schalter .fas:hover  {
-	color:#78909C;
-}
-
-
 /* - - - toggle-funkton mit CHECKED- - - */
 
 
@@ -238,7 +252,7 @@ input#open-info-disclaimer:checked ~ #boxfenster-disclaimer {
 /* ==================================== ab 960 pixel ================================== */
 @media (min-width: 960px) {
 	.boxinhalt {
-	width:80rem;
+		width:80rem;
 		height:84vh;
 		margin:0 auto;
 		margin-top:8vh;
