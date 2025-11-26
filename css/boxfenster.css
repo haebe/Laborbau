@@ -49,6 +49,10 @@
 #boxfenster-referenzen-20 ,
 #boxfenster-referenzen-21 ,
 #boxfenster-referenzen-22 ,
+#boxfenster-referenzen-23 ,
+#boxfenster-referenzen-24 ,
+#boxfenster-referenzen-25 ,
+#boxfenster-referenzen-26 ,
 #boxfenster-laborbau-1 ,
 #boxfenster-laborbau-2 ,
 #boxfenster-laborbau-3 ,
@@ -123,7 +127,12 @@
 #boxfenster-referenzen-1 .bild,
 #boxfenster-referenzen-2 .bild,
 #boxfenster-referenzen-19 .bild,
-#boxfenster-referenzen-20 .bild
+#boxfenster-referenzen-20 .bild,
+#boxfenster-referenzen-21 .bild,
+#boxfenster-referenzen-22 .bild,
+#boxfenster-referenzen-23 .bild
+#boxfenster-referenzen-25 .bild
+
  {
 	display: block;
 	margin-left: auto;
@@ -131,6 +140,7 @@
 	width: 30rem;
 	margin-bottom: 2rem;
 }
+
 
 /* - - - schließen-schalter für box-fenster -  - - - */
 
@@ -211,6 +221,10 @@ input#open-info-referenzen-19:checked ~ #boxfenster-referenzen-19,
 input#open-info-referenzen-20:checked ~ #boxfenster-referenzen-20,
 input#open-info-referenzen-21:checked ~ #boxfenster-referenzen-21,
 input#open-info-referenzen-22:checked ~ #boxfenster-referenzen-22,
+input#open-info-referenzen-23:checked ~ #boxfenster-referenzen-23,
+input#open-info-referenzen-24:checked ~ #boxfenster-referenzen-24,
+input#open-info-referenzen-25:checked ~ #boxfenster-referenzen-25,
+input#open-info-referenzen-26:checked ~ #boxfenster-referenzen-26,
 input#open-info-objektplanung-1:checked ~ #boxfenster-objektplanung-1,
 input#open-info-objektplanung-2:checked ~ #boxfenster-objektplanung-2,
 input#open-info-laborbau-1:checked ~ #boxfenster-laborbau-1,
