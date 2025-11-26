@@ -101,18 +101,21 @@
 
       <header class="logo">
 
-        <picture class="logo-image-wrapper">
-          <source type="image/avif" srcset="../images/Tiber_Titelbild.avif">
-          <source type="image/webp" srcset="../images/Tiber_Titelbild.webp">
-          <img
-            src="../images/Tiber_Titelbild.jpg"
-            alt="Tiber Häbe in einem Labor vor einer Abzughaube stehend"
-            width="1920"
-            height="1076">										
-        </picture>
+        <figure>
+          <picture class="logo-image-wrapper">
+            <source type="image/avif" srcset="../images/Tiber_Titelbild.avif">
+            <source type="image/webp" srcset="../images/Tiber_Titelbild.webp">
+            <img
+              id="tiber_titelbild"
+              src="../images/Tiber_Titelbild.jpg"
+              alt="Tiber Häbe in einem Labor vor einer Abzughaube stehend"
+              width="1920"
+              height="1076">										
+          </picture>
+        </figure>
+        
 
         <div class="logo-content">
-
           <div id="name-wrapper">
             <div id="name">
 
@@ -649,6 +652,8 @@
             <h2>Reine Labor- oder Projektplanung</h2>
             <label class="btn button-open" for="open-info-referenzen-21"><span class="weiter">Veteo
                 Augsburg</span></label><br>
+            <label class="btn button-open" for="open-info-referenzen-22"><span class="weiter"> Ohm Innovation
+               Centers der Technischen Hochschule Nürnberg</span></label><br>
             <label class="btn button-open" for="open-info-referenzen-9"><span class="weiter">IMD
                 Berlin</span></label><br>
             <label class="btn button-open" for="open-info-referenzen-12"><span class="weiter">Medicover
@@ -1502,77 +1507,6 @@
         <!-- ################################################################## -->
         <!-- F E N S T E R ENDE Impressionen - Laborwelt  UNSICHTBAR UNSICHTBAR -->
         <!-- ################################################################## -->
-
-
-
-
-        <!--  ############ Bild mit BOXSLIDER Ausgeblendet // InArbeit
-
-<div class="wrapper-box" id="gallery">
-
-<div class="box box-1_of_3">
-<div class="bild">
-<a href="images/Impressionen/Bild_006.jpg" data-lightbox="gruppe1" data-title="Name oder Beschriftung">
-<span class="boxslider pos-top-left leftslider"><span>Beschriftung Bild</span></span>
-<img src="images/Impressionen/Bild_006.jpg" width="900" height="500"  alt="">
-</a>
-</div>
-</div>
-
-<div class="box box-1_of_3">
-<div class="bild">
-<a href="images/Impressionen/Bild_007.jpg" data-lightbox="gruppe1" data-title="Bau allgemein Raum im Ausbau">
-<span class="boxslider pos-top-left topslider"><span>...und Vorher</span></span>
-<img src="images/Impressionen/Bild_008.jpg" width="900" height="500"  alt="Nachher">
-</a>
-</div>
-</div>
-
-<div class="box box-1_of_3">
-<div class="bild">
-<a href="images/Impressionen/Bild_009.jpg" data-lightbox="gruppe1" data-title="Arbeitsplatz nach Bau">
-<span class="boxslider pos-bottom-right rightslider"><span>Vor dem Umabu</span></span>
-<img src="images/Impressionen/Bild_010.jpg" width="900" height="500"  alt="">
-</a>
-</div>
-</div>
-
-<div class="box box-1_of_3">
-<div class="bild">
-<a href="images/Impressionen/Bild_015.jpg" data-lightbox="gruppe1" data-title="Ihre Bildunterschrift">
-<span class="boxslider pos-top-left leftslider"><span>Horses - Click Me</span></span>
-<img src="images/Impressionen/Bild_015.jpg" width="900" height="500"  alt="">
-</a>
-</div>
-</div>
-
-<div class="box box-1_of_3">
-<div class="bild">
-<a href="images/Impressionen/Bild_017.jpg" data-lightbox="gruppe1" data-title="Ihre Bildunterschrift">
-<span class="boxslider pos-top-left leftslider"><span>We All Need Water</span></span>
-<img src="images/Impressionen/Bild_018.jpg" width="900" height="500"  alt="">
-</a>
-</div>
-</div>
-
-<div class="box box-1_of_3">
-<div class="bild">
-<a href="images/Impressionen/Bild_020.jpg" data-lightbox="gruppe1" data-title="Ihre Bildunterschrift">
-<span class="boxslider pos-top-left topslider"><span>Home Office - My Work is relaxing!</span></span>
-<img src="images/Impressionen/Bild_019.jpg" width="900" height="500"  alt="">
-</a>
-</div>
-</div>
-</div>
-  bildbox  ENDE-->
-        <br>
-        <br>
-        <!--  oeffnen-button "Mehr Bilder über Schalter"  InArbeit
-<label class="btn button-open" for="open-info-secundus"><span class="weiter">Mehr Fotos</span></label>
-</div>
-</section>
---->
-
 
         <!-- :::::::::::::::::::::::::::::::::::: E N D E ABSCHNITT  Impressionen :::::::::::::::::::::::::::::::::::: -->
 
@@ -2502,7 +2436,18 @@ color:#fff;
             <div class="bild">
               <a href="images/Referenzen/Markkleeberg.jpg" data-lightbox="gruppe2">
                 <span class="boxslider pos-top-left topslider"><span>Klicken zum vergrößern</span></span>
-                <img src="images/Referenzen/Markkleeberg.jpg" width="900" height="500"  alt="Großes industrielles Gebäude">
+                
+                 <figure>
+                  <picture>
+                    <source type="image/avif" srcset="images/Referenzen/Markkleeberg.avif">
+                    <source type="image/webp" srcset="images/Referenzen/Markkleeberg.webp">
+                    <img
+                      src="images/Referenzen/Markkleeberg.jpg"
+                      alt="Modernes Laborgebäude in neuem Industriekomplex"
+                      width="960"
+                      height="509">									
+                  </picture>
+                </figure>
               </a>
             </div>
           </div>
@@ -2583,7 +2528,18 @@ color:#fff;
             <div class="bild">
               <a href="images/Referenzen/SUI-Stgt.jpg" data-lightbox="gruppe2">
                 <span class="boxslider pos-top-left topslider"><span>Klicken zum vergrößern</span></span>
-                <img src="images/Referenzen/SUI-Stgt.jpg" width="900" height="500"  alt="Großes industrielles Gebäude">
+                
+                 <figure>
+                  <picture>
+                    <source type="image/avif" srcset="images/Referenzen/SUI-Stgt.avif">
+                    <source type="image/webp" srcset="images/Referenzen/SUI-Stgt.webp">
+                    <img
+                      src="images/Referenzen/SUI-Stgt.jpg"
+                      alt="Großes gewerbliches Gebäude"
+                      width="960"
+                      height="540">									
+                  </picture>
+                </figure>
               </a>
             </div>
           </div>
@@ -3259,7 +3215,7 @@ color:#fff;
 
 
   <!-- ############################################################ -->
-  <!-- F E N S T E R referenzen-18 START -->
+  <!-- F E N S T E R referenzen-18 (Wala Bad Boll) START -->
   <!-- ############################################################ -->
 
   <div class="schalter">
@@ -3316,7 +3272,17 @@ color:#fff;
             <div class="bild">
               <a href="images/Referenzen/IFLb_Berlin.jpg" data-lightbox="gruppe2">
                 <span class="boxslider pos-top-left topslider"><span>Klicken zum vergrößern</span></span>
-                <img src="images/Referenzen/IFLb_Berlin.jpg" width="900" height="500"  alt="Großes industrielles Gebäude">
+                <figure>
+                  <picture>
+                    <source type="image/avif" srcset="images/Referenzen/IFLb_Berlin.avif">
+                    <source type="image/webp" srcset="images/Referenzen/IFLb_Berlin.webp">
+                    <img
+                      src="images/Referenzen/IFLb_Berlin.jpg"
+                      alt="Großes industrielles Gebäude"
+                      width="960"
+                      height="1280">									
+                  </picture>
+                </figure>
               </a>
             </div>
           </div>
@@ -3335,13 +3301,13 @@ color:#fff;
         <br>
         <h3>Ansprechpartner für Informationen zur Zusammenarbeit mit Tiberius-Ingenieure</h3>
         Chantal Gitelman +49 173 6516171 <br>
-        <p class="jobtitel">Ursprüngliche Inhaberin</p>
+        <p class="margin-bottom">Ursprüngliche Inhaberin</p>
         Jürgen Reiner +49 172 6506112 <br>
-        <p class ="jobtitel">Teil der ursprünglichen Geschäftsführung</p>
+        <p class ="margin-bottom">Teil der ursprünglichen Geschäftsführung</p>
         Andreas Dalcke +49 173 2781546 <br>
-        <p class="jobtitel">Leiter Facility Management </p>
+        <p class="margin-bottom">Leiter Facility Management </p>
         Mario Reschke +49 171 81 435 91 <br>
-        <p class="jobtitel">Standortleitung seit Oktober 2023 </p>
+        <p class="margin-bottom">Standortleitung seit Oktober 2023 </p>
 
 
         <br>
@@ -3420,8 +3386,18 @@ color:#fff;
             <div class="bild">
               <a href="images/Referenzen/Krankenhaus_Hamburg.jpg" data-lightbox="gruppe2">
                 <span class="boxslider pos-top-left topslider"><span>Klicken zum vergrößern</span></span>
-                <img src="images/Referenzen/Krankenhaus_Hamburg.jpg" width="900" height="500"  alt="Großes industrielles Gebäude">
-              </a>
+                <figure>
+                  <picture>
+                    <source type="image/avif" srcset="images/Referenzen/Krankenhaus_Hamburg.avif">
+                    <source type="image/webp" srcset="images/Referenzen/Krankenhaus_Hamburg.webp">
+                    <img
+                      src="images/Referenzen/Krankenhaus_Hamburg.jpg"
+                      alt="Großes industrielles Gebäude"
+                      width="960"
+                      height="720">									
+                  </picture>
+                </figure>
+              </a>              
             </div>
           </div>
         </div>
@@ -3516,6 +3492,29 @@ color:#fff;
         <!--  infofenster-schliessen-button -->
         <label class="button-close" for="open-info-referenzen-21"><i class="fas fa-times-circle"></i></label>
         
+        <!--  bild -->     
+        <div class="wrapper-box">
+          <div class="box box-1_of_1">
+            <div class="bild">
+              <a href="images/Referenzen/Veteo_Augsburg.jpg" data-lightbox="gruppe2">
+                <span class="boxslider pos-top-left topslider"><span>Klicken zum vergrößern</span></span>
+                <figure>
+                  <picture>
+                    <source type="image/avif" srcset="images/Referenzen/Veteo_Augsburg.avif">
+                    <source type="image/webp" srcset="images/Referenzen/Veteo_Augsburg.webp">
+                    <img
+                      src="images/Referenzen/Veteo_Augsburg.jpg"
+                      alt="Altes industrielles Gebäude"
+                      width="768"
+                      height="1024">									
+                  </picture>
+                </figure>
+              </a>              
+            </div>
+          </div>
+        </div>
+        <!--  bild ENDE-->
+        
         <!-- Content -->
         <br>
         <br>
@@ -3565,7 +3564,128 @@ color:#fff;
   <!-- SH referenzen-21 ENDE -->
 
 
+    <!--! SH Referenzen 22 -->
+  <!-- ############################################################ -->
+  <!-- F E N S T E R referenzen-22 Aktuell (Ohm Innovation Centers) UNSICHTBAR -->
+  <!-- ############################################################ -->
+  <div class="schalter">
+    <!--  checkbox versteckt -->
+    <input type="checkbox" id="open-info-referenzen-22">
+    <!-- = = = = = = = = = = boxfenster sextus = = = = = = = = = = -->
+    <div id="boxfenster-referenzen-22">
+      <div class="boxinhalt">
+        <!--  infofenster-schliessen-button -->
+        <label class="button-close" for="open-info-referenzen-22"><i class="fas fa-times-circle"></i></label>
+        
+        <!-- Content -->
+        <h1>Ohm Innovation Centers der Technischen Hochschule Nürnberg</h1>
+        <h2>Auftraggeber</h2>
 
+        <address>
+          <strong>MIB Coloured Fields GmbH</strong><br>
+          Weißenfelser Straße 65 G<br>
+          04229 Leipzig
+        </address>
+
+        <address>
+          <strong>Büro Nürnberg Auf AEG</strong><br>
+          Muggenhofer Straße 135<br>
+          90429 Nürnberg
+        </address>
+        
+      
+        <h2>Betreiber</h2>
+        <p>Ohm Innovation Centers der Technischen Hochschule Nürnberg</p>
+
+        <br>
+
+        
+        <h2>Ansprechpartner für Informationen zur Zusammenarbeit mit Tiberius-Ingenieure</h2>
+        
+        <address>
+        Herr Thomas Röder +49 177 3331962 <br>
+        Projektleiter des Auftraggebers
+        </address>
+
+        <br>
+
+        <h2>Kurzbeschreibung Projekt</h2>
+        <p>Erstellen des neuen Innovation Center der Technischen Hochschule Nürnberg in einem Neubauprojekt. </p>
+        <p class="margin-bottom">Der Technologiecampus besteht aus Laboren, Technikums und einem großen administrativen Bereich. </p>
+        <p class="margin-bottom">Zuerst als Mietobjekt für den Freistadt Bayern wurde das Projekt zum Kaufobjekt gewandelt. </p>
+        <p>Projektadresse:</p>
+        <address>Brucknerstraße 11 in 90429 Nürnberg </address>
+      
+        <h2>Leistung Tiberius-Ingenieure</h2>
+        <p class="margin-bottom">Erstellen der Planung sämtlicher Labore und der meisten Technikums in enger Abstimmung mit den Nutzern. </p>
+        <p class="margin-bottom">Unterstützung der Projektanten durch Beratung zu den Schnittstellenthemen, speziell bei dem Thema Lüftung. </p>
+        <p>Erstellung der Ausschreibung für die Labormöbel und -ausstattung, der Sicherheitsschränke sowie der begehbaren Einhausung. Teilnahme an den Vergaben dieser Gewerke. Durchführung der Rechnungsprüfung. </p>
+
+        <br>
+        <h2>Projektzeitraum</h2>
+         2021-2025
+
+
+        <!--  abstandhalter zum unteren rand des fensters -->
+        <p class="break">&nbsp;</p>
+        <!-- ende abstandstandshalter -->
+      </div>
+    </div>
+    <!-- = = = = = = = = = = ENDE boxfenster referenzen-22 = = = = = = = = = = -->
+  </div>
+  <!-- SH referenzen-22 ENDE -->
+
+
+
+
+
+  <!--! SH Referenzen XXXX -->
+  <!-- ############################################################ -->
+  <!-- F E N S T E R referenzen-XXXX Aktuell (XXXX) UNSICHTBAR -->
+  <!-- ############################################################ -->
+  <div class="schalter">
+    <!--  checkbox versteckt -->
+    <input type="checkbox" id="open-info-referenzen-XXXX">
+    <!-- = = = = = = = = = = boxfenster sextus = = = = = = = = = = -->
+    <div id="boxfenster-referenzen-XXXX">
+      <div class="boxinhalt">
+        <!--  infofenster-schliessen-button -->
+        <label class="button-close" for="open-info-referenzen-XXXX"><i class="fas fa-times-circle"></i></label>
+        
+        <!-- Content -->
+        <br>
+        <br>
+        <h2>XXXX Gmbh, XXXX Projektname</h2>
+        <h3>Bauherr / Betreiber</h3>
+        XXXX
+        <br>
+        <h3>Ansprechpartner für Informationen zur Zusammenarbeit mit Tiberius-Ingenieure</h3>
+        XXXX
+        <br>
+        <br>
+        <h3>Kurzbeschreibung Projekt</h3>
+        XXXX
+        XXXX
+        <br>
+        <br>
+        <h3>Leistung Tiberius-Ingenieure</h3>
+        XXXX
+        XXXX
+        <br>
+        <h3>Projektzeitraum</h3>
+         XXXX<br>
+        <br>
+        <br>
+
+
+        <!--  abstandhalter zum unteren rand des fensters -->
+        <p class="break">&nbsp;</p>
+        <!-- ende abstandstandshalter -->
+      </div>
+    </div>
+    <!-- = = = = = = = = = = ENDE boxfenster referenzen-XXXX = = = = = = = = = = -->
+  </div>
+  <!-- SH referenzen-XXXX ENDE -->
 
 
 
