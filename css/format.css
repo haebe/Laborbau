@@ -176,7 +176,6 @@ img {
 .btn span.weiter  {
 	display:inline-block;
 	color:#fff;
-	background:#859aa4;
 	background: #78909c;
 	text-decoration:none;
 	padding:.2rem 1.8rem .2rem 1.2rem;
@@ -795,34 +794,6 @@ hr.line {
 	line-height:3rem;
 }
 
-/* text statt bilder in den boxen */
-#impressions  .back-01 {
-	background-image:url(../images/logo05.jpg);
-	background-position:50% 50%;
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-
-#impressions  .back-02 {
-	background-image:url(../images/logo03.jpg);
-	background-position:50% 50%;
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-
-#impressions  .back-03 {
-	background-image:url(../images/logo04.jpg);
-	background-position:50% 50%;
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-
-#impressions  .back-04 {
-	background-image:url(../images/logo02.jpg);
-	background-position:50% 50%;
-	background-repeat:no-repeat;
-	background-size:cover;
-}
 /*  ----------------Bilder f�r Referenzen Laborneubau Markkleeberg & Laborneubau Stuttgart ----------------------  */
 #impressions  .back-10 {
 	background-image:url(../images/Referenzen/Markkleeberg.jpg);
