@@ -1,1 +1,0 @@
-SR: interner Zähler für Sicherungen der Zwischenstände während der Programmierung.
