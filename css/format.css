@@ -1077,6 +1077,7 @@ until we reach the widest screen in an office
 		height:42.84vh;
 	}
 
+	/* Navigationsspalte kommt dazu */
 	#main-spalte-1 {
 		display: table-cell;
 		vertical-align: top;
